@@ -1,10 +1,21 @@
 # Notification List
 A demonstration of a full-stack application aimed at pulling a list of items (notifications) and displaying them on the frontend.
-Its implement CRUD endpoint for Notification, along with another entity (Task) used mostly to testing ad triggering creation of  Notification based on user action. 
 
-## Features
-- Backend: Mongodb (via Mongoose), Express, Node
-- Fronend: React
+The backend implements CRUD endpoints for Notification. A second set of CRUD endpoints (Tasks) is used mostly to testing and triggering creation of  Notification based on user action. 
+
+## Backend Stack/Features
+- Node
+- Express
+- Mongodb
+- Node
+
+The frontend implements a REACT single-page application which pulls a list of items from the backend, displays them, and allows CRUD operations.
+
+## Frontend Stack/Features
+- React
+- React-Router
+- React-Router-DOM
+- Fetch
 
 ## Available Scripts
 
