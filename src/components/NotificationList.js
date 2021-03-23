@@ -16,7 +16,6 @@ export const NotificationList = () => {
 
     return (
         <div className="container">
-            
             <h3>Notifications</h3>
             <div className="container">
                 {
@@ -27,8 +26,7 @@ export const NotificationList = () => {
                         </div>
                     ))
                 }
-            </div>
-           
+            </div>  
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 import { TaskList } from './components/TaskList';
 import { EditTask } from './components/EditTask';
@@ -7,6 +7,13 @@ import { NotificationList } from './components/NotificationList'
 
 
 function App() {
+
+  const [notificationCount, setNotificationCount] = useState()
+
+  useEffect(() => {
+    setNotificationCount(2)
+  }, [])
+
   return (
     <div>
       <nav className="navbar bg-light navbar-expand-lg navbar-light">
@@ -21,7 +28,7 @@ function App() {
         </ul>
         <ul class="navbar-nav">
           <li className="navbar-item">
-            <Link to="/notifications" className="nav-link">Notifications</Link>
+            <Link to="/notifications" className="btn btn-primary">Notifications <span class="badge badge-light">{notificationCount}</span></Link>
           </li>
         </ul>
       </nav>
