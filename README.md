@@ -1,4 +1,4 @@
-# Notification List
+# Full-Stack MERN - Notification List
 A demonstration of a full-stack application aimed at pulling a list of items (notifications) and displaying them on the frontend.
 
 The backend implements CRUD endpoints for Notification. A second set of CRUD endpoints (Tasks) is used mostly to testing and triggering creation of  Notification based on user action. 
